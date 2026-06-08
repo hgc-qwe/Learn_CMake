@@ -9,6 +9,6 @@ include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
 # add_executable(app ${SRC})
 # set(LIBRARY_OUTPUT_PATH /home/hgc/桌面/Cmake/calc)
 # add_library(calc STATIC ${SRC})
-link_libraries(calc)
-link_directories(${CMAKE_CURRENT_SOURCE_DIR}/lib1)
+link_directories(${CMAKE_CURRENT_SOURCE_DIR}/lib2) # 指定自定义库的路径
 add_executable(app ${SRC})
+target_link_libraries(app calc)

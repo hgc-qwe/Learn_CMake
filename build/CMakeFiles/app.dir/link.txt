@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/app.dir/main.cpp.o -o app   -L/home/hgc/桌面/Cmake/lib1  -Wl,-rpath,/home/hgc/桌面/Cmake/lib1 -lcalc 
+/usr/bin/c++ CMakeFiles/app.dir/main.cpp.o -o app   -L/home/hgc/桌面/Cmake/lib2  -Wl,-rpath,/home/hgc/桌面/Cmake/lib2 -lcalc 
