@@ -1,0 +1,3 @@
+/home/hgc/桌面/Cmake/CMakeFiles/calc.dir
+/home/hgc/桌面/Cmake/CMakeFiles/edit_cache.dir
+/home/hgc/桌面/Cmake/CMakeFiles/rebuild_cache.dir

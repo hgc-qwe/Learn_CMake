@@ -1,4 +1,4 @@
-CMakeFiles/app.dir/src/main.cpp.o: /home/hgc/桌面/Cmake/src/main.cpp \
+CMakeFiles/calc.dir/src/b.cpp.o: /home/hgc/桌面/Cmake/src/b.cpp \
  /usr/include/stdc-predef.h /home/hgc/桌面/Cmake/include/d.h \
  /usr/include/c++/13/iostream /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \

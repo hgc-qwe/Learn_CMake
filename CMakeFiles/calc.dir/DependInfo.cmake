@@ -8,10 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/hgc/桌面/Cmake/src/a.cpp" "CMakeFiles/app.dir/src/a.cpp.o" "gcc" "CMakeFiles/app.dir/src/a.cpp.o.d"
-  "/home/hgc/桌面/Cmake/src/b.cpp" "CMakeFiles/app.dir/src/b.cpp.o" "gcc" "CMakeFiles/app.dir/src/b.cpp.o.d"
-  "/home/hgc/桌面/Cmake/src/c.cpp" "CMakeFiles/app.dir/src/c.cpp.o" "gcc" "CMakeFiles/app.dir/src/c.cpp.o.d"
-  "/home/hgc/桌面/Cmake/src/main.cpp" "CMakeFiles/app.dir/src/main.cpp.o" "gcc" "CMakeFiles/app.dir/src/main.cpp.o.d"
+  "/home/hgc/桌面/Cmake/src/a.cpp" "CMakeFiles/calc.dir/src/a.cpp.o" "gcc" "CMakeFiles/calc.dir/src/a.cpp.o.d"
+  "/home/hgc/桌面/Cmake/src/b.cpp" "CMakeFiles/calc.dir/src/b.cpp.o" "gcc" "CMakeFiles/calc.dir/src/b.cpp.o.d"
+  "/home/hgc/桌面/Cmake/src/c.cpp" "CMakeFiles/calc.dir/src/c.cpp.o" "gcc" "CMakeFiles/calc.dir/src/c.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
