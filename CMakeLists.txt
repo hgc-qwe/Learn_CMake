@@ -1,14 +1,21 @@
 cmake_minimum_required(VERSION 3.15)
 project(test)
-add_definitions(-DDEBUG)
-# set(SRC a.cpp b.cpp c.cpp main.cpp)
-# aux_source_directory(${PROJECT_SOURCE_DIR} SRC)
-file(GLOB SRC ${CMAKE_CURRENT_SOURCE_DIR}/src/*.cpp)
-include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
-set(EXECUTABLE_OUTPUT_PATH /home/hgc/桌面/Cmake)
-# set(CMake_CXX_STANDARD 11)
-# add_executable(app ${SRC})
-# set(LIBRARY_OUTPUT_PATH /home/hgc/桌面/Cmake/calc)
-# add_library(calc STATIC ${SRC})
-# link_directories(${CMAKE_CURRENT_SOURCE_DIR}/lib2) # 指定自定义库的路径
-add_executable(app ${SRC})
+# 定义变量
+# 静态库生成的路径
+set(LIBPATH ${PROJECT_SOURCE_DIR}/lib)
+# 可执行程序的存储目录
+set(EXECPATH ${PROJECT_SOURCE_DIR}/bin)
+# 头文件路径
+set(HEADPATH ${PROJECT_SOURCE_DIR}/include)
+# 库文件名
+set(CALCLIB calc)
+set(SORTLIB sort)
+# 可执行程序的名字
+set(APPNAME1 app1)
+set(APPNAME2 app2)
+
+# 添加子目录
+add_subdirectory(calc)
+add_subdirectory(sort)
+add_subdirectory(test1)
+add_subdirectory(test2)

@@ -11,6 +11,10 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.28.3/CMakeCCompiler.cmake"
   "CMakeFiles/3.28.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.28.3/CMakeSystem.cmake"
+  "/home/hgc/桌面/Cmake/calc/CMakeLists.txt"
+  "/home/hgc/桌面/Cmake/sort/CMakeLists.txt"
+  "/home/hgc/桌面/Cmake/test1/CMakeLists.txt"
+  "/home/hgc/桌面/Cmake/test2/CMakeLists.txt"
   "/usr/share/cmake-3.28/Modules/CMakeCCompiler.cmake.in"
   "/usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c"
   "/usr/share/cmake-3.28/Modules/CMakeCInformation.cmake"
@@ -122,9 +126,16 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/3.28.3/CMakeCCompiler.cmake"
   "CMakeFiles/3.28.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
+  "calc/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "sort/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "test1/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "test2/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/app.dir/DependInfo.cmake"
+  "calc/CMakeFiles/calc.dir/DependInfo.cmake"
+  "sort/CMakeFiles/sort.dir/DependInfo.cmake"
+  "test1/CMakeFiles/app1.dir/DependInfo.cmake"
+  "test2/CMakeFiles/app2.dir/DependInfo.cmake"
   )

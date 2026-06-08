@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/app2.dir/sort.cpp.o -o /home/hgc/桌面/Cmake/bin/app2   -L/home/hgc/桌面/Cmake/lib  -Wl,-rpath,/home/hgc/桌面/Cmake/lib /home/hgc/桌面/Cmake/lib/libsort.a /home/hgc/桌面/Cmake/lib/libcalc.a 

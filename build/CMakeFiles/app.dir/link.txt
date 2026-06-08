@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/app.dir/src/a.cpp.o CMakeFiles/app.dir/src/b.cpp.o CMakeFiles/app.dir/src/c.cpp.o CMakeFiles/app.dir/src/main.cpp.o -o /home/hgc/桌面/Cmake/app 

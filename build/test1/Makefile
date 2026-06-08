@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hgc/桌面/Cmake/build/CMakeFiles /home/hgc/桌面/Cmake/build//CMakeFiles/progress.marks
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
+	cd /home/hgc/桌面/Cmake/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/hgc/桌面/Cmake/build/CMakeFiles /home/hgc/桌面/Cmake/build/test1//CMakeFiles/progress.marks
+	cd /home/hgc/桌面/Cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test1/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/hgc/桌面/Cmake/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clean
+	cd /home/hgc/桌面/Cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test1/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,70 +103,56 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /home/hgc/桌面/Cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test1/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /home/hgc/桌面/Cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test1/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/hgc/桌面/Cmake/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named calc
+# Convenience name for target.
+test1/CMakeFiles/app1.dir/rule:
+	cd /home/hgc/桌面/Cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test1/CMakeFiles/app1.dir/rule
+.PHONY : test1/CMakeFiles/app1.dir/rule
 
-# Build rule for target.
-calc: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 calc
-.PHONY : calc
-
-# fast build rule for target.
-calc/fast:
-	$(MAKE) $(MAKESILENT) -f calc/CMakeFiles/calc.dir/build.make calc/CMakeFiles/calc.dir/build
-.PHONY : calc/fast
-
-#=============================================================================
-# Target rules for targets named sort
-
-# Build rule for target.
-sort: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sort
-.PHONY : sort
-
-# fast build rule for target.
-sort/fast:
-	$(MAKE) $(MAKESILENT) -f sort/CMakeFiles/sort.dir/build.make sort/CMakeFiles/sort.dir/build
-.PHONY : sort/fast
-
-#=============================================================================
-# Target rules for targets named app1
-
-# Build rule for target.
-app1: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 app1
+# Convenience name for target.
+app1: test1/CMakeFiles/app1.dir/rule
 .PHONY : app1
 
 # fast build rule for target.
 app1/fast:
-	$(MAKE) $(MAKESILENT) -f test1/CMakeFiles/app1.dir/build.make test1/CMakeFiles/app1.dir/build
+	cd /home/hgc/桌面/Cmake/build && $(MAKE) $(MAKESILENT) -f test1/CMakeFiles/app1.dir/build.make test1/CMakeFiles/app1.dir/build
 .PHONY : app1/fast
 
-#=============================================================================
-# Target rules for targets named app2
+calc.o: calc.cpp.o
+.PHONY : calc.o
 
-# Build rule for target.
-app2: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 app2
-.PHONY : app2
+# target to build an object file
+calc.cpp.o:
+	cd /home/hgc/桌面/Cmake/build && $(MAKE) $(MAKESILENT) -f test1/CMakeFiles/app1.dir/build.make test1/CMakeFiles/app1.dir/calc.cpp.o
+.PHONY : calc.cpp.o
 
-# fast build rule for target.
-app2/fast:
-	$(MAKE) $(MAKESILENT) -f test2/CMakeFiles/app2.dir/build.make test2/CMakeFiles/app2.dir/build
-.PHONY : app2/fast
+calc.i: calc.cpp.i
+.PHONY : calc.i
+
+# target to preprocess a source file
+calc.cpp.i:
+	cd /home/hgc/桌面/Cmake/build && $(MAKE) $(MAKESILENT) -f test1/CMakeFiles/app1.dir/build.make test1/CMakeFiles/app1.dir/calc.cpp.i
+.PHONY : calc.cpp.i
+
+calc.s: calc.cpp.s
+.PHONY : calc.s
+
+# target to generate assembly for a file
+calc.cpp.s:
+	cd /home/hgc/桌面/Cmake/build && $(MAKE) $(MAKESILENT) -f test1/CMakeFiles/app1.dir/build.make test1/CMakeFiles/app1.dir/calc.cpp.s
+.PHONY : calc.cpp.s
 
 # Help Target
 help:
@@ -177,9 +163,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... app1"
-	@echo "... app2"
-	@echo "... calc"
-	@echo "... sort"
+	@echo "... calc.o"
+	@echo "... calc.i"
+	@echo "... calc.s"
 .PHONY : help
 
 
@@ -191,6 +177,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/hgc/桌面/Cmake/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
