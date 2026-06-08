@@ -60,7 +60,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/hgc/桌面/Cmake
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hgc/桌面/Cmake
+CMAKE_BINARY_DIR = /home/hgc/桌面/Cmake/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hgc/桌面/Cmake/CMakeFiles /home/hgc/桌面/Cmake//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hgc/桌面/Cmake/build/CMakeFiles /home/hgc/桌面/Cmake/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hgc/桌面/Cmake/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hgc/桌面/Cmake/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -117,89 +117,41 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named calc
+# Target rules for targets named app
 
 # Build rule for target.
-calc: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 calc
-.PHONY : calc
+app: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 app
+.PHONY : app
 
 # fast build rule for target.
-calc/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/calc.dir/build.make CMakeFiles/calc.dir/build
-.PHONY : calc/fast
+app/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/build
+.PHONY : app/fast
 
-src/a.o: src/a.cpp.o
-.PHONY : src/a.o
-
-# target to build an object file
-src/a.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/calc.dir/build.make CMakeFiles/calc.dir/src/a.cpp.o
-.PHONY : src/a.cpp.o
-
-src/a.i: src/a.cpp.i
-.PHONY : src/a.i
-
-# target to preprocess a source file
-src/a.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/calc.dir/build.make CMakeFiles/calc.dir/src/a.cpp.i
-.PHONY : src/a.cpp.i
-
-src/a.s: src/a.cpp.s
-.PHONY : src/a.s
-
-# target to generate assembly for a file
-src/a.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/calc.dir/build.make CMakeFiles/calc.dir/src/a.cpp.s
-.PHONY : src/a.cpp.s
-
-src/b.o: src/b.cpp.o
-.PHONY : src/b.o
+main.o: main.cpp.o
+.PHONY : main.o
 
 # target to build an object file
-src/b.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/calc.dir/build.make CMakeFiles/calc.dir/src/b.cpp.o
-.PHONY : src/b.cpp.o
+main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/main.cpp.o
+.PHONY : main.cpp.o
 
-src/b.i: src/b.cpp.i
-.PHONY : src/b.i
-
-# target to preprocess a source file
-src/b.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/calc.dir/build.make CMakeFiles/calc.dir/src/b.cpp.i
-.PHONY : src/b.cpp.i
-
-src/b.s: src/b.cpp.s
-.PHONY : src/b.s
-
-# target to generate assembly for a file
-src/b.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/calc.dir/build.make CMakeFiles/calc.dir/src/b.cpp.s
-.PHONY : src/b.cpp.s
-
-src/c.o: src/c.cpp.o
-.PHONY : src/c.o
-
-# target to build an object file
-src/c.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/calc.dir/build.make CMakeFiles/calc.dir/src/c.cpp.o
-.PHONY : src/c.cpp.o
-
-src/c.i: src/c.cpp.i
-.PHONY : src/c.i
+main.i: main.cpp.i
+.PHONY : main.i
 
 # target to preprocess a source file
-src/c.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/calc.dir/build.make CMakeFiles/calc.dir/src/c.cpp.i
-.PHONY : src/c.cpp.i
+main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/main.cpp.i
+.PHONY : main.cpp.i
 
-src/c.s: src/c.cpp.s
-.PHONY : src/c.s
+main.s: main.cpp.s
+.PHONY : main.s
 
 # target to generate assembly for a file
-src/c.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/calc.dir/build.make CMakeFiles/calc.dir/src/c.cpp.s
-.PHONY : src/c.cpp.s
+main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/main.cpp.s
+.PHONY : main.cpp.s
 
 # Help Target
 help:
@@ -209,16 +161,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... calc"
-	@echo "... src/a.o"
-	@echo "... src/a.i"
-	@echo "... src/a.s"
-	@echo "... src/b.o"
-	@echo "... src/b.i"
-	@echo "... src/b.s"
-	@echo "... src/c.o"
-	@echo "... src/c.i"
-	@echo "... src/c.s"
+	@echo "... app"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 .PHONY : help
 
 
